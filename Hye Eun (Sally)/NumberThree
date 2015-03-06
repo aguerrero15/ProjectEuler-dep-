@@ -1,0 +1,26 @@
+
+public class NumberThree {
+	public static void main(String[] args) {
+	  long n;
+  	long factor;
+  	long biggest;
+		n = 600851475143l;
+		factor = 3;
+		biggest = 1;
+		while (factor<n & n>0) {
+
+			while (n%2==0) {
+				n=n/2;
+				}
+
+			if (n%2 != 0 & n % factor == 0) {
+				n = n / factor;
+				}
+
+			factor = factor + 2;
+		  }
+
+		biggest = n;
+		System.out.println(biggest);
+	}
+}

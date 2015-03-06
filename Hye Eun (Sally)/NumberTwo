@@ -1,0 +1,22 @@
+public class NumberTwo {
+	public static void main(String[] args) {
+	  int a;
+	  int b;
+	  int iTotal;
+	  a = 1;
+	  b = 2;
+	  iTotal = 0;
+		while (a <4000000) {
+			if (a%2==0)
+				iTotal = iTotal + a;
+			if (b%2==0)
+				iTotal = iTotal + b;
+			a = a + b;
+			b = b + a;
+			
+
+		}
+		
+	System.out.println(iTotal);
+	}
+}
