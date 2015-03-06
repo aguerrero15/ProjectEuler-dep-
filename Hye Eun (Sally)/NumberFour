@@ -1,0 +1,35 @@
+
+public class NumberFour {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int factorOne;
+		int factorTwo;
+		int palindrome;
+		String palindromeCheck;
+		String reverse;
+		palindrome = 0;
+		
+		for (factorOne = 999; factorOne>100; factorOne--) {
+			
+			for (factorTwo = 999; factorTwo>100; factorTwo--) {
+				
+				palindromeCheck = new Integer(factorOne*factorTwo).toString();
+				reverse = new StringBuffer(palindromeCheck).reverse().toString();
+				
+				if (palindromeCheck.equals(reverse) == true) {
+					
+					if (palindrome < factorOne*factorTwo) {		
+						
+						palindrome = factorOne*factorTwo;
+						
+					}
+				}
+			}
+		}
+		System.out.println(palindrome);
+	}
+}
